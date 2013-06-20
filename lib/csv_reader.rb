@@ -1,6 +1,22 @@
 class CSVReader
   attr_accessor :fname, :headers
 
+  #Opens file as Read Only
+  def read
+    f = File.new(@fname, 'r')
+
+    #Get the headers
+    self.headers = f.readline
+
+    # Loop over the lines
+    while (!f.eof? && next_line = f.readline)
+      values = next_line.split(',')
+      hash = create_hash(values)
+      yield(hash)
+    end
+
+  end
+
   #Saves filename to instance varible fname
   def initalize(filename)
     @fname = filename
