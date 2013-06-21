@@ -11,7 +11,7 @@ class Population
 
   def menu
     system 'clear'
-    puts "Pupulation Menu"
+    puts "Population Menu"
     puts "---------------"
     @analytics.options.each do |opt|
       puts "#{opt[:menu_id]}. #{opt[:menu_title]}"

@@ -1,6 +1,6 @@
 class Analytics
 
-  attr_accessor :options
+  attr_accessor :options, :city
 
   def initialize(areas)
     @areas = areas

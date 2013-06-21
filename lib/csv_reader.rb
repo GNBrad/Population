@@ -18,7 +18,7 @@ class CSVReader
   end
 
   #Saves filename to instance varible fname
-  def initalize(filename)
+  def initialize(filename)
     @fname = filename
   end
 
