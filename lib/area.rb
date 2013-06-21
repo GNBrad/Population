@@ -12,3 +12,4 @@ class Area
   def to_s
     "#{@city}, #{@state}, #{@zipcode} has an #{estimated_population} people!"
   end
+end

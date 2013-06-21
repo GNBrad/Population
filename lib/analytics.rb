@@ -1,10 +1,3 @@
-The set_options method should create an instance variable named @options which should hold a menu. A menu should be 
-an array of hashes. Each menu hash should have three keys: menu_id, menu_title and method. menu_id should be the number 
-that shows up in the menu, menu_title should be the display text in the menu, and method should be the method called if 
-it's option is picked by the user. The set_options method should also be called from initialize.
-
-Note: example menu_titles are included for you below - you'll create the methods for these later in the checkpoint.
-
 class Analytics
 
   attr_accessor :options
